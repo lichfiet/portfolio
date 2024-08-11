@@ -16,35 +16,52 @@ export function NavBar() {
     }, [selectedOption, navigate]);
 
     return (
-        <>
-            <div className="container-fluid">
-                <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet"></link>
-                <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet"></link>
-
-                <div className="container" style={{ 'background-color': '#ffff', 'margin-bottom': '30px' }}>
-                    <div className="container-fluid">
-                        <nav id="nav">
-                            <ul>
-                                <a onClick={() => handleChange("home")} className="contrast navTitle"><li className="nav-name"><strong>Trevor Lichfield</strong></li></a>
-                            </ul>
-                            <ul>
-                                <a href="" onClick={() => handleChange("home")}><strong><li className="nav-link">HOME</li></strong></a>
-                                <a href="" onClick={() => handleChange("about")}><strong><li>ABOUT</li></strong></a>
-                                <a href="" onClick={() => handleChange("workExperience")}><strong><li>WORK</li></strong></a>
-                                <a href="" onClick={() => handleChange("projects")}><strong><li>PROJECTS</li></strong></a>
-                            </ul>
-                            <ul>
-                                <li><a class="contrast socialMedia outline" href="https://github.com/lichfiet"><i class="socialMediaIcon fab fa-github"></i></a></li>
-                                <li><a class="contrast socialMedia outline" href="https://github.com/lichfiet"><i class="socialMediaIcon fab fa-github"></i></a></li>
-                                <li><a class="contrast socialMedia outline" href="https://github.com/lichfiet"><i class="socialMediaIcon fab fa-github"></i></a></li>
-                                <li><a class="contrast socialMedia outline" href="https://www.linkedin.com/in/tlichfield/"><i class="socialMediaIcon fab fa-linkedin-in"></i></a></li>
-                            </ul>
-                        </nav>
-                    </div>
-                </div>
-                <Outlet />
-            </div>
-        </>
+<>
+    <div className="container mx-auto p-6">
+        <div className="flex justify-between items-center mb-4">
+            <nav className="flex items-center space-x-4">
+                <a onClick={() => handleChange("home")} className="text-xl font-bold text-gray-800 cursor-pointer">
+                    trevor lichfield
+                </a>
+                <ul className="flex space-x-4">
+                    <li>
+                        <a href="#" onClick={() => handleChange("home")} className="text-gray-800 hover:text-gray-600">
+                            home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={() => handleChange("about")} className="text-gray-800 hover:text-gray-600">
+                            about
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={() => handleChange("workExperience")} className="text-gray-800 hover:text-gray-600">
+                            work
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" onClick={() => handleChange("projects")} className="text-gray-800 hover:text-gray-600">
+                            projects
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <ul className="flex space-x-4">
+                <li>
+                    <a className="text-gray-800 hover:text-gray-600" href="https://github.com/lichfiet">
+                        <i className="fab fa-github"></i>
+                    </a>
+                </li>
+                <li>
+                    <a className="text-gray-800 hover:text-gray-600" href="https://www.linkedin.com/in/tlichfield/">
+                        <i className="fab fa-linkedin-in"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <Outlet />
+    </div>
+</>
     );
 }
 
