@@ -1,5 +1,6 @@
-const HomePage = function () {
+import '/background.png';
 
+const HomePage = function () {
     return (
         <div>
             {
@@ -8,7 +9,7 @@ const HomePage = function () {
                  * - keep nav lowercase, upper case headings and sentences
                  */
             }
-            <div className="container p-6 max-w-sm mx-auto">
+            <div className="container p-6 max-w-sm mx-auto" style={{ backgroundImage: `url('../background.png')`, backgroundSize: "contain" }}>
                 <div className="flex mt-20 mb-10 justify-start">
                     <div className="md:grid-cols-2 grid sm:grid-cols-1">
                         <div className="flex content-center justify-left">
@@ -21,7 +22,6 @@ const HomePage = function () {
                             </ul>
                         </div>
                     </div>
-
                 </div>
             </div>
 
@@ -41,8 +41,8 @@ const HomePage = function () {
                     Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates pariatur eius non nihil. Non corrupti doloribus illo velit eligendi fugiat ab reprehenderit, natus perspiciatis dolorum deserunt. Harum non itaque nostrum.
                 </div>
             </div>
-        </div >
-    )
-}
+        </div>
+    );
+};
 
 export default HomePage;
