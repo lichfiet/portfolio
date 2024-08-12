@@ -84,22 +84,22 @@ export function NavBar() {
                             <i class="fa-solid fa-x text-6xl text-white hover:text-gray-400" onClick={handleMenuToggle}></i>
                         </li>
                         <li>
-                            <a href="#" onClick={() => handleChange("home")} className="text-6xl text-white hover:text-gray-400">
+                            <a href="#" onClick={() => {handleChange("home"), handleMenuToggle()}} className="text-6xl text-white hover:text-gray-400">
                                 home
                             </a>
                         </li>
                         <li>
-                            <a href="#" onClick={() => handleChange("about")} className="text-6xl text-white hover:text-gray-400">
+                            <a href="#" onClick={() => {handleChange("about"), handleMenuToggle()}} className="text-6xl text-white hover:text-gray-400">
                                 about
                             </a>
                         </li>
                         <li>
-                            <a href="#" onClick={() => handleChange("work-experience")} className="text-6xl text-white hover:text-gray-400">
+                            <a href="#" onClick={() => {handleChange("work-experience"), handleMenuToggle()}} className="text-6xl text-white hover:text-gray-400">
                                 work
                             </a>
                         </li>
                         <li>
-                            <a href="#" onClick={() => handleChange("projects")} className="text-6xl text-white hover:text-gray-400">
+                            <a href="#" onClick={() => {handleChange("projects"), handleMenuToggle()}} className="text-6xl text-white hover:text-gray-400">
                                 projects
                             </a>
                         </li>
