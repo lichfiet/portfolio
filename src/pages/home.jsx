@@ -8,7 +8,7 @@ const HomePage = function () {
                  * - keep nav lowercase, upper case headings and sentences
                  */
             }
-            <div className="container p-6 max-w-med mx-auto">
+            <div className="container p-6 max-w-sm mx-auto">
                 <div className="flex mt-20 mb-10 justify-start">
                     <div className="md:grid-cols-2 grid sm:grid-cols-1">
                         <div className="flex content-center justify-left">
@@ -25,7 +25,7 @@ const HomePage = function () {
                 </div>
             </div>
 
-            <div className="container p-6 max-w-med mx-auto bg-neutral-200 rounded-xl shadow-xl">
+            <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl">
                 <h1 className="text-xl font-bold">
                     Who am I?
                 </h1>
