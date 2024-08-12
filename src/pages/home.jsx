@@ -18,7 +18,7 @@ const HomePage = function () {
                         <div className="flex items-end justify-start">
                             <ul className="p-4 text-left">
                                 <li><b>Trevor Lichfield</b>, <i>20 yrs. Old</i></li>
-                                <li>Fullstack & Devops Engineer</li>
+                                <li>Fullstack & DevOps Engineer</li>
                             </ul>
                         </div>
                     </div>
