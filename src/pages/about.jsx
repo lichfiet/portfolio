@@ -17,7 +17,7 @@ const About = function () {
                 </div>
             </div>
 
-            <div className="container p-6 max-w-med mx-auto bg-neutral-200 rounded-xl shadow-xl">
+            <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl">
                 <h1 className="text-xl font-bold">
                     About Me
                 </h1>
