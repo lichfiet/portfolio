@@ -15,52 +15,98 @@ export function NavBar() {
         }
     }, [selectedOption, navigate]);
 
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    function handleMenuToggle() {
+        setIsMenuOpen(!isMenuOpen);
+    }
+
     return (
         <>
+            { /* NAVIGATION BAR FOR LARGER SCREENS */ }
             <div className="flex justify-center items-center m-6">
                 <nav className="flex items-center space-x-20 lg:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm">
                     <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold text-gray-800 cursor-pointer">
                         trevor lichfield
                     </a>
-                    <ul className="flex space-x-4 hidden">
-                    <li className="hidden lg:block">
-                            <a href="#" onClick={() => handleChange("home")} className="text-gray-800 hover:text-gray-400 hidden lg:block">
+                    <ul className="flex space-x-4">
+                        <li className="hidden md:block">
+                            <a href="#" onClick={() => handleChange("home")} className="text-gray-800 hover:text-gray-400 hidden md:block">
                                 home
                             </a>
                         </li>
-                        <li className="hidden lg:block">
-                            <a href="#" onClick={() => handleChange("about")} className="text-gray-800 hover:text-gray-400 hidden lg:block">
+                        <li className="hidden md:block">
+                            <a href="#" onClick={() => handleChange("about")} className="text-gray-800 hover:text-gray-400 hidden md:block">
                                 about
                             </a>
                         </li>
-                        <li className="hidden lg:block">
-                            <a href="#" onClick={() => handleChange("work-experience")} className="text-gray-800 hover:text-gray-400 hidden lg:block">
+                        <li className="hidden md:block">
+                            <a href="#" onClick={() => handleChange("work-experience")} className="text-gray-800 hover:text-gray-400 hidden md:block">
                                 work
                             </a>
                         </li>
-                        <li className="hidden lg:block">
-                            <a href="#" onClick={() => handleChange("projects")} className="text-gray-800 hover:text-gray-400 hidden lg:block">
+                        <li className="hidden md:block">
+                            <a href="#" onClick={() => handleChange("projects")} className="text-gray-800 hover:text-gray-400 hidden md:block">
                                 projects
                             </a>
                         </li>
                     </ul>
                     <ul className="flex ml-3 space-x-2">
-                        <li className="hidden lg:block">
-                            <a className="text-gray-800 hover:text-gray-600 hidden lg:block" href="https://github.com/lichfiet">
+                        <li className="hidden md:block">
+                            <a className="text-gray-800 hover:text-gray-600 hidden md:block" href="https://github.com/lichfiet">
                                 <i className="fab fa-github"></i>
                             </a>
                         </li>
-                        <li className="hidden lg:block">
+
+
+                        <li className="hidden md:block">
                             <a className="text-gray-800 hover:text-gray-600" href="https://www.linkedin.com/in/tlichfield/">
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
                         </li>
-                        <li className="lg:hidden">
-                            <i class="fa-solid fa-bars"></i>
+                        <li className="md:hidden">
+                            <i class="fa-solid fa-bars" onClick={handleMenuToggle}></i>
                         </li>
                     </ul>
+
+
                 </nav>
-            </div>
+            </div >
+
+
+            {
+                /* MENU FOR SMALLER SCREENS */
+            }
+            {isMenuOpen && (
+                <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
+                    <ul className="flex flex-col space-y-4 text-center">
+                        <li>
+                            <i class="fa-solid fa-x text-6xl text-white hover:text-gray-400" onClick={handleMenuToggle}></i>
+                        </li>
+                        <li>
+                            <a href="#" onClick={() => handleChange("home")} className="text-6xl text-white hover:text-gray-400">
+                                home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onClick={() => handleChange("about")} className="text-6xl text-white hover:text-gray-400">
+                                about
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onClick={() => handleChange("work-experience")} className="text-6xl text-white hover:text-gray-400">
+                                work
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onClick={() => handleChange("projects")} className="text-6xl text-white hover:text-gray-400">
+                                projects
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            )}
+
             <Outlet />
         </>
     );
