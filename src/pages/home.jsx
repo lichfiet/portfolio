@@ -9,10 +9,10 @@ const HomePage = function () {
                  * - keep nav lowercase, upper case headings and sentences
                  */
             }
-            <div className="container p-6 max-w-sm mx-auto" style={{ backgroundImage: `url('../background.png')`, backgroundSize: "contain" }}>
+            <div className="container p-6 max-w-sm mx-auto sm:bg-none hero-background">
                 <div className="flex mt-20 mb-10 justify-start">
                     <div className="md:grid-cols-2 grid sm:grid-cols-1">
-                        <div className="flex content-center justify-left">
+                        <div className="hidden md:flex content-center justify-left">
                             <img src="https://via.placeholder.com/200" alt="profile picture" />
                         </div>
                         <div className="flex items-end justify-start">

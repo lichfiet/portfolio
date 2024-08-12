@@ -23,3 +23,19 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-style: normal;
 }
+
+.hero-background {
+  background-image: url('../background.png');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: bottom;
+}
+
+@media (max-width: 640px) {
+  .hero-background {
+    background-image: url('');
+    background-size: contain;
+    background-repeat: no-repeat; 
+    background-position: bottom;
+  }
+}
