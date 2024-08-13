@@ -32,6 +32,18 @@ h1, h2, h3, h4, h5, h6 {
   background-position-x: right;
 }
 
+.about-background {
+  background-image: url('../about me.png');
+  background-size: contain;
+  background-repeat: no-repeat; 
+  background-position: bottom;
+  background-position-x: center;
+}
+
+.about-me {
+  height: 20vw;
+}
+
 @media (max-width: 640px) {
   .hero-background {
     background-image: url('');
@@ -39,5 +51,13 @@ h1, h2, h3, h4, h5, h6 {
     background-repeat: no-repeat; 
     background-position: bottom;
     background-position-x: right;
+  }
+
+  .about-me {
+    height: 50vw;
+  }
+
+  .about-background {
+    background-image: none;
   }
 }

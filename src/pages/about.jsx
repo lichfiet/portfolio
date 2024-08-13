@@ -8,10 +8,10 @@ const About = function () {
                  * - keep nav lowercase, upper case headings and sentences
                  */
             }
-            <div className="container p-6 max-w-med mx-auto">
-                <div className="flex mb-10 justify-center">
-                    <div className="flex content-center justify-left">
-                        <img src="https://via.placeholder.com/1000x400" alt="profile picture" />
+            <div className="container max-w-sm mx-auto">
+                <div className="flex justify-center about-background">
+                    <div className="flex content-center justify-left p-8">
+                        <img className="about-me" src="https://via.placeholder.com/200" alt="profile picture" />
                     </div>
 
                 </div>
