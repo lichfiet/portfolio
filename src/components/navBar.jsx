@@ -25,7 +25,7 @@ export function NavBar() {
         <>
             { /* NAVIGATION BAR FOR LARGER SCREENS */ }
             <div className="flex justify-center items-center m-6">
-                <nav className="flex items-center space-x-20 lg:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm">
+                <nav className="flex items-center space-x-16 md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm">
                     <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold text-gray-800 cursor-pointer">
                         trevor lichfield
                     </a>
