@@ -44,6 +44,11 @@ h1, h2, h3, h4, h5, h6 {
   height: 20vw;
 }
 
+.about {
+  grid-template-columns: "3fr 1fr";
+  display: grid; 
+}
+
 @media (max-width: 640px) {
   .hero-background {
     background-image: url('');

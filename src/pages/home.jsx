@@ -28,17 +28,23 @@ const HomePage = function () {
 
             <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl mb-6">
                 <div className="p-2 mb-4">
-                    <h1 className="text-xl font-bold">Who am I?</h1>
+                    <h1 className="text-xl font-bold mb-1 underline">Who am I?</h1>
                     <div>
-                        <p>
+                        <p className="mb-1 indent-2">
                             I'm currently a Customer Support Associate II, and an in progress DevOps Engineer. After my first exposure 
-                            to system administration in middle school with the help of my dad
+                            to system administration in middle school with the help of my dad, who helped bring a Minecraft server
+                            online, I've had an interest in exploring operations and containerization, launching my servers in Docker. 
+                        </p>
+                        <p className="indent-2">
+                            Since then, I've held an interest in system administration and software development. More recently, I've
+                            been exploring DevOps principles, and how I can apply them to my personal projects, and with my development background,
+                            I found the mesh between operations and development to be a perfect fit for me.
                         </p>
                     </div>
                 </div>
                 <div className="grid grid-cols-1 md:grid-cols-2">
                     <div className="p-2">
-                        <h1 className="text-xl font-bold">What do I do?</h1>
+                        <h1 className="text-xl font-bold underline">What do I do?</h1>
                         <p>
                             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
                             ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
@@ -47,9 +53,9 @@ const HomePage = function () {
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia laborum vero totam, praesentium adipisci tempora voluptatem repellat aut dignissimos. Optio asperiores ex explicabo id, possimus consectetur autem nisi veritatis?
                         </p>
                     </div>
-                    <div>
-                        <h1 className="text-xl font-bold">How do I do it?</h1>
-                        <p className="p-2">
+                    <div className="p-2">
+                        <h1 className="text-xl font-bold underline">How do I do it?</h1>
+                        <p>
                             Over the last few years, I've spent a lot of time learning and growing as a developer.
                             I've picked up quite a few technologies, and I'm always looking to learn more. But, the languages
                             and technologies I've worked with most recently are:
