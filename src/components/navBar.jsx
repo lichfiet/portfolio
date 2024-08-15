@@ -35,14 +35,14 @@ export function NavBar() {
                                 home
                             </a>
                         </li>
-                        <li className="hidden md:block">
+                        {/* <li className="hidden md:block">
                             <a href="#" onClick={() => handleChange("work-experience")} className="text-gray-800 hover:text-gray-400 hidden md:block">
                                 work
                             </a>
-                        </li>
+                        </li> */}
                         <li className="hidden md:block">
                             <a href="#" onClick={() => handleChange("projects")} className="text-gray-800 hover:text-gray-400 hidden md:block">
-                                projects
+                                portfolio
                             </a>
                         </li>
                         <li className="hidden md:block">

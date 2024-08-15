@@ -1,6 +1,7 @@
 import '/background.png';
 
 const HomePage = function () {
+
     return (
         <div>
             {
@@ -31,9 +32,9 @@ const HomePage = function () {
                     <h1 className="text-xl font-bold mb-1 underline">Who am I?</h1>
                     <div>
                         <p className="mb-1 indent-2">
-                            I'm currently a Customer Support Associate II, and an in progress DevOps Engineer. After my first exposure 
+                            I'm currently a Customer Support Associate II, and an in progress DevOps Engineer. After my first exposure
                             to system administration in middle school with the help of my dad, who helped bring a Minecraft server
-                            online, I've had an interest in exploring operations and containerization, launching my servers in Docker. 
+                            online, I've had an interest in exploring operations and containerization, launching my servers in Docker.
                         </p>
                         <p className="indent-2">
                             Since then, I've held an interest in system administration and software development. More recently, I've
@@ -80,11 +81,36 @@ const HomePage = function () {
             </div>
             <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl mb-6">
                 <h1 className="text-xl font-bold">
-                    Why you should care.
+                    What can I do for you?
                 </h1>
-                <div className="p-2">
-                    lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptates pariatur eius non nihil. Non corrupti doloribus illo velit eligendi fugiat ab reprehenderit, natus perspiciatis dolorum deserunt. Harum non itaque nostrum.
+                <div className="p-2 flex flex-col justify-center">
+                    <p className="mb-6">
+                        If you're looking for a developer who is passionate, flexible, curious, and dedicated (for better or worse), then you've
+                        come to the right place! Take a look around my portfolio for a better ideao of what I can do, and feel free
+                        to <b>contact me</b> and let me know how I can make your life easier.
+                    </p>
+
+                        <div className="bg-black p-5 bg-opacity-20 mx-2 rounded-lg">
+                            <ul className="grid grid-cols-1 md:grid-cols-2 justify-center text-center">
+                                <div className="px-3">
+                                    <li className="">
+                                        <a className="text-gray-800 hover:text-gray-600" href="https://www.linkedin.com/in/tlichfield/">
+                                            <i className="fab fa-linkedin-in hover:text-white text-neutral-100 text-2xl md:text-4xl"></i>
+                                        </a>
+                                        <p className="hover:text-white text-neutral-100 text-base md:text-xl">linkedin.com/trevorlichfield</p>
+                                    </li>
+                                </div>
+                                <div>
+                                <li className="">
+                                    <a className="text-gray-800 hover:text-white-600">
+                                        <i className="fas fa-envelope hover:text-white text-neutral-100 text-2xl md:text-4xl"></i>
+                                    </a>
+                                    <p className="hover:text-white text-neutral-100 text-base md:text-xl">trevor.lichfield@lichfieldfamily.com</p>
+                                </li>
+                                </div>
+                            </ul>
+                        </div>
+
                 </div>
             </div>
         </div>
