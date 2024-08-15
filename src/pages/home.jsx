@@ -59,12 +59,12 @@ const HomePage = function () {
                         <p>
                             Over the last few years, I've spent a lot of time learning and growing as a developer.
                             I've picked up quite a few technologies, and I'm always looking to learn more. But, the languages
-                            and technologies I've worked with most recently are:
+                            and technologies I've worked with most extensively are:
                             <ul className="list-inside list-disc p-2 text-lg italic">
                                 <li>Javascript, Express.js, React.js</li>
                                 <li>AWS and Terraform</li>
-                                <li>Containerization w/ Kubernetes</li>
-                                <li>CI/CD and Gitops tools </li>
+                                <li>Containerization and development with Docker</li>
+                                <li>Orchestration w/ Kubernetes</li>
                             </ul>
                         </p>
                     </div>
