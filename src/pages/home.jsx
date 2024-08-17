@@ -32,7 +32,7 @@ const HomePage = function () {
                     <h1 className="text-xl font-bold mb-1 underline">Who am I?</h1>
                     <div>
                         <p className="mb-1 indent-2">
-                            I'm currently a Customer Support Associate II, and an in progress DevOps Engineer. After my first exposure
+                            I'm currently a <b>Customer Support Associate II</b>, and an in progress <b><i>DevOps Engineer</i></b>. After my first exposure
                             to system administration in middle school with the help of my dad, who helped bring a Minecraft server
                             online, I've had an interest in exploring operations and containerization, launching my servers in Docker.
                         </p>
@@ -59,13 +59,15 @@ const HomePage = function () {
                         <p>
                             Over the last few years, I've spent a lot of time learning and growing as a developer.
                             I've picked up quite a few technologies, and I'm always looking to learn more. But, the languages
-                            and technologies I've worked with most extensively are:
-                            <ul className="list-inside list-disc p-2 text-lg italic">
+                            and technologies I've worked with most are:
+                            <ul className="list-inside list-disc p-2 text-base font-medium">
                                 <li>Javascript, Express.js, React.js</li>
                                 <li>AWS and Terraform</li>
                                 <li>Containerization and development with Docker</li>
                                 <li>Orchestration w/ Kubernetes</li>
                             </ul>
+                            There are plenty more, but those are the ones I've worked the most with and feel most 
+                            comfortable with.
                         </p>
                     </div>
                 </div>
@@ -86,13 +88,13 @@ const HomePage = function () {
                 <div className="p-2 flex flex-col justify-center">
                     <p className="mb-6">
                         If you're looking for a developer who is passionate, flexible, curious, and dedicated (for better or worse), then you've
-                        come to the right place! Take a look around my portfolio for a better ideao of what I can do, and feel free
+                        come to the right place! Take a look around my portfolio for a better idea of what I can do, and feel free
                         to <b>contact me</b> and let me know how I can make your life easier.
                     </p>
 
-                        <div className="bg-black p-5 bg-opacity-20 mx-2 rounded-lg">
+                        <div className="bg-black p-2 bg-opacity-20 mx-2 rounded-lg">
                             <ul className="grid grid-cols-1 md:grid-cols-2 justify-center text-center">
-                                <div className="px-3">
+                                <div className="p-2">
                                     <li className="">
                                         <a className="text-gray-800 hover:text-gray-600" href="https://www.linkedin.com/in/tlichfield/">
                                             <i className="fab fa-linkedin-in hover:text-white text-neutral-100 text-2xl md:text-4xl"></i>
