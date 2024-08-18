@@ -65,7 +65,7 @@ export function NavBar() {
                             </a>
                         </li>
                         <li className="md:hidden">
-                            <i class="fa-solid fa-bars" onClick={handleMenuToggle}></i>
+                            <i className="fa-solid fa-bars" onClick={handleMenuToggle}></i>
                         </li>
                     </ul>
 
@@ -81,7 +81,7 @@ export function NavBar() {
                 <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
                     <ul className="flex flex-col space-y-4 text-center">
                         <li>
-                            <i class="fa-solid fa-x text-6xl text-white hover:text-gray-400" onClick={handleMenuToggle}></i>
+                            <i className="fa-solid fa-x text-6xl text-white hover:text-gray-400" onClick={handleMenuToggle}></i>
                         </li>
                         <li>
                             <a href="#" onClick={() => {handleChange("home"), handleMenuToggle()}} className="text-6xl text-white hover:text-gray-400">

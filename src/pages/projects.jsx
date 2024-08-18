@@ -1,15 +1,41 @@
+import { useRef, useState } from 'react';
+
 const Projects = function () {
+    const FrameWrapper = () => {
+        const ref = useRef();
+        const [height, setHeight] = useState("0px");
+        const onLoad = () => {
+          setHeight(ref.current.contentWindow.document.body.scrollHeight + "px");
+        };
+        return (
+          <iframe className="w-full hidden sm:block"
+            ref={ref}
+            onLoad={onLoad}
+            id="myFrame"
+            src="https://files.trevorlichfield.com"
+            width="100%"
+            height={height}
+            style={{
+              width: "100%",
+              overflow: "auto",
+            }}
+          ></iframe>
+        );
+      }
+
+
+
     return (
         <>
-            <div className="container p-6 max-w-med mx-auto">
+            <div className="container p-6 mx-auto">
                 <h1 className="font-bold text-2xl">File Explorer</h1>
                 <a href="https://files.trevorlichfield.com" target="_blank" rel="noopener noreferrer"><p className="underline">files.trevorlichfield.com</p></a>
                 <h1 className="mt-4 italic font-semibold hidden md:block">Live Preview</h1>
-                <div className="flex p-4 mx-auto justify-center items-center content-center">
-                    <iframe className="w-full shadow-lg hidden md:block" style={{ height: "80vh", maxHeight: "650px", maxWidth: "1300px" }} src="https://files.trevorlichfield.com" title="File Explorer" allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
-                    <img className="block md:hidden" src="./file explorer.png"></img>
-                </div>
             </div>
+                <div className="flex p-4 mx-auto justify-center items-center content-center">
+                    <FrameWrapper />
+                    <img className="block sm:hidden" src="./file explorer.png"></img>
+                </div>
             <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl mb-6">
                 <div className="p-2 block md:grid" style={{ gridTemplateColumns: "3fr 1fr" }}>
                     <div className="p-2">
