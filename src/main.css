@@ -49,6 +49,22 @@ h1, h2, h3, h4, h5, h6 {
   display: grid; 
 }
 
+.iframe-mobile {
+  min-height: 550px;
+  max-height: 650px; 
+  max-width: 1300px;
+}
+
+@media (max-width: 768px) {
+  .iframe-mobile {
+    min-height: 420px;
+    max-height: 360px; 
+    max-width: 1300px;
+  }
+
+}
+
+
 @media (max-width: 640px) {
   .hero-background {
     background-image: url('');
@@ -65,4 +81,5 @@ h1, h2, h3, h4, h5, h6 {
   .about-background {
     background-image: none;
   }
+
 }
