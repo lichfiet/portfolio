@@ -1,30 +1,5 @@
-import { useRef, useState } from 'react';
-
 const Projects = function () {
-    const FrameWrapper = () => {
-        const ref = useRef();
-        const [height, setHeight] = useState("0px");
-        const onLoad = () => {
-          setHeight(ref.current.contentWindow.document.body.scrollHeight + "px");
-        };
-        return (
-          <iframe className="w-full hidden sm:block"
-            ref={ref}
-            onLoad={onLoad}
-            id="myFrame"
-            src="https://files.trevorlichfield.com"
-            width="100%"
-            height={height}
-            style={{
-              width: "100%",
-              overflow: "auto",
-            }}
-          ></iframe>
-        );
-      }
-
-
-
+    
     return (
         <>
             <div className="container p-6 mx-auto">
@@ -33,7 +8,8 @@ const Projects = function () {
                 <h1 className="mt-4 italic font-semibold hidden md:block">Live Preview</h1>
             </div>
                 <div className="flex p-4 mx-auto justify-center items-center content-center">
-                    <FrameWrapper />
+                    <iframe className="w-full hidden sm:block" 
+                    style={{ minHeight: "550px", maxHeight: "650px", maxWidth: "1300px" }} src="https://files.trevorlichfield.com" title="File Explorer" allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
                     <img className="block sm:hidden" src="./file explorer.png"></img>
                 </div>
             <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl mb-6">
