@@ -9,7 +9,7 @@ const Projects = function () {
             </div>
                 <div className="flex p-4 mx-auto justify-center items-center content-center">
                     <iframe className="w-full hidden sm:block" 
-                    style={{ minHeight: "550px", maxHeight: "650px", maxWidth: "1300px" }} src="https://files.trevorlichfield.com" title="File Explorer" allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
+                    style={{ minHeight: "500px", maxHeight: "650px", maxWidth: "1300px" }} src="https://files.trevorlichfield.com" title="File Explorer" allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
                     <img className="block sm:hidden" src="./file explorer.png"></img>
                 </div>
             <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl mb-6">
