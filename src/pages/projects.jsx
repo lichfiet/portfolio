@@ -18,18 +18,18 @@ const Projects = function () {
 
     const Project2 = () => {
         return <>
-                <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x600'></img>
+                <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x500'></img>
         </>
     }
 
     const Project3 = () => {
         return <>
-                <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x600'></img>
+                <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x500'></img>
         </>
     }
 
     const ProjectSelector = (project) => {
-        if (activeProject === project) {
+        if (activeProjectName === project) {
             return
         } else if (project === "File Explorer") {
             setActiveProject(<FileExplorer />);
@@ -96,7 +96,7 @@ const Projects = function () {
                     }
                 </nav>
                 <div className="rounded-xl mr-4">
-                    <h1 className="font-bold text-5xl text-center">{activeProjectName}</h1>
+                    <h1 className="font-bold text-4xl text-center mb-5">{activeProjectName}</h1>
                     {activeProject}
                 </div>
             </div>
