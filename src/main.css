@@ -57,8 +57,8 @@ h1, h2, h3, h4, h5, h6 {
 
 @media (max-width: 768px) {
   .iframe-mobile {
-    min-height: 420px;
-    max-height: 360px; 
+    min-height: 300px;
+    max-height: 340px; 
     max-width: 1300px;
   }
 
