@@ -104,7 +104,7 @@ const HomePage = function () {
                                     <a className="text-gray-800 hover:text-white-600">
                                         <i className="fas fa-envelope hover:text-white text-neutral-100 text-2xl md:text-4xl"></i>
                                     </a>
-                                    <p className="hover:text-white text-neutral-100 text-base md:text-xl">trevor.lichfield@lichfieldfamily.com</p>
+                                    <p className="hover:text-white text-neutral-100 text-base md:text-xl">trevor@lichfieldfamily.com</p>
                                 </li>
                             </div>
                         </ul>
