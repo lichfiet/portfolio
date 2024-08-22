@@ -48,8 +48,8 @@ const Projects = function () {
         {
             name: "File Explorer",
             button: 
-                <button onClick={() => ProjectSelector("File Explorer")} >
-                    <div className={`p-5 m-2 bg-neutral-200 hover:bg-neutral-300 rounded-xl ${activeProjectName === 'File Explorer' ? 'bg-neutral-100 shadow-xl animate-bounce' : ''}`} >
+                <button className={`p-2 m-2 bg-neutral-200 hover:bg-neutral-300 rounded-lg focus:bg-neutral-100 focus:shadow-xl focus:animate-bounce` } onClick={() => ProjectSelector("File Explorer")} >
+                    <div>
                         <h1 className="font-semibold text-lg">File Explorer</h1>
                         <img className={`${activeProjectName !== 'File Explorer' ? '' : 'hidden'}`} src='./explorer.png'></img>
                     </div>
@@ -59,7 +59,7 @@ const Projects = function () {
             name: "Project 2",
             button: 
                 <button onClick={() => ProjectSelector("Project 2")} >
-                    <div className={`p-5 m-2 bg-neutral-200 hover:bg-neutral-300 rounded-xl ${activeProjectName === 'Project 2' ? 'bg-neutral-100 shadow-xl animate-bounce' : ''}`} >
+                    <div className={`p-2 m-2 bg-neutral-200 hover:bg-neutral-300 rounded-lg ${activeProjectName === 'Project 2' ? 'bg-neutral-100 shadow-xl animate-bounce' : ''}`} >
                         <h1 className="font-semibold text-lg">Project 2</h1>
                         <img className={`${activeProjectName !== 'Project 2' ? '' : 'hidden'}`} src='https://via.placeholder.com/600x300'></img>
                     </div>
@@ -69,7 +69,7 @@ const Projects = function () {
             name: "Project 3",
             button:
                 <button onClick={() => ProjectSelector("Project 3")} >
-                    <div className={`p-5 m-2 bg-neutral-200 hover:bg-neutral-300 rounded-xl ${activeProjectName === 'Project 3' ? 'bg-neutral-100 shadow-xl animate-bounce' : ''}`} >
+                    <div className={`p-2 m-2 bg-neutral-200 hover:bg-neutral-300 rounded-lg ${activeProjectName === 'Project 3' ? 'bg-neutral-100 shadow-xl animate-bounce' : ''}`} >
                         <h1 className="font-semibold text-lg">Project 3</h1>
                         <img className={`${activeProjectName !== 'Project 3' ? '' : 'hidden'}`} src='https://via.placeholder.com/600x300'></img>
                     </div>
@@ -88,11 +88,7 @@ const Projects = function () {
             <div className="projects-container container mx-auto block md:grid" style={{ gridTemplateColumns: "1fr 3fr" }}>
                 <nav className='hidden flex-col justify-center me-4 my-4 md:flex' >
                     {
-                        navButtons.sort((btn) => {
-                            if (btn.name === activeProjectName) return -1; // Move a to the front
-                            if (btn.name !== activeProjectName) return 1; // Move b to the front
-                            return 0; // Keep the original order
-                        }).map((btn) => btn.button)
+                        navButtons.map((btn) => btn.button)
                     }
                 </nav>
                 <div className="rounded-xl mr-4">
