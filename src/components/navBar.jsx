@@ -25,13 +25,13 @@ export function NavBar() {
 
     return (
         <div className="backgroundimage p-6">
-            { /* NAVIGATION BAR FOR LARGER SCREENS */ }
+            { /* NAVIGATION BAR FOR LARGER SCREENS */}
             <div className="flex justify-center items-center">
-                <nav className=" md:container flex items-center space-x-16 md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm w-full mx-auto">
-                    <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold text-gray-800 cursor-pointer">
-                        trevor lichfield
-                    </a>
+                <nav className="container flex flex-row items-center space-x-16 md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm w-full mx-auto">
                     <ul className="flex space-x-4">
+                        <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold text-gray-800 cursor-pointer">
+                            trevor lichfield
+                        </a>
                         <li className="hidden md:block">
                             <a href="#" onClick={(e) => { e.preventDefault(); handleChange("home") }} className="text-gray-800 hover:text-gray-400 hidden md:block">
                                 home
@@ -53,7 +53,7 @@ export function NavBar() {
                             </a>
                         </li>
                     </ul>
-                    <ul className="flex ml-3 space-x-2">
+                    <ul className="flex ml-3 space-x-2 content-end">
                         <li className="hidden md:block">
                             <a className="text-gray-800 hover:text-gray-600 hidden md:block" href="https://github.com/lichfiet">
                                 <i className="fab fa-github"></i>
