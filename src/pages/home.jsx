@@ -11,13 +11,13 @@ const HomePage = function () {
                  */
             }
             <div className="container p-6 max-w-sm mx-auto sm:bg-none">
-                <div className="flex mt-20 mb-10 justify-start">
+                <div className="flex my-5 md:my-10 justify-center md:justify-start">
                     <div className="md:grid-cols-2 grid sm:grid-cols-1">
-                        <div className="hidden md:flex content-center justify-center">
+                        <div className="md:flex content-center justify-center">
                             <img src="https://via.placeholder.com/200" alt="profile picture" />
                         </div>
                         <div className="flex items-end justify-start">
-                            <ul className="p-4 text-left">
+                            <ul className="p-4 text-center md:text-left">
                                 <li className="font-medium">Hey! <i className="font-light">My name is,</i></li>
                                 <li><b>Trevor Lichfield</b>, 20 yrs. Old</li>
                                 <li className="font-light italic underline">Fullstack & DevOps Engineer</li>
@@ -28,32 +28,16 @@ const HomePage = function () {
             </div>
 
             <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl mb-6" >
-                <div className="p-2 mb-4 grid grid-cols-1 md:grid-cols-2" style={{ gridTemplateColumns: "1fr 1fr" }}>
-                    <div className="p-2">
+                <div className="p-2 mb-4 md:grid md:grid-cols-2 sm:block" style={{ gridTemplateColumns: "3fr 1fr" }}>
+                    <div className="p-2 mr-5">
                         <h1 className="text-xl font-bold mb-1">Who am I?</h1>
                         <p className="indent-2">
                             I'm a current <b>Customer Support Associate II</b>, and a <b><i>DevOps Engineer</i></b> to be. After my first exposure
                             to SysOps in middle school, I've had an interest in exploring operations and containerization, launching game servers for fun,
-                            and moving them to docker. With an interest in software development, I've lately become proficient in Javascript, and have written 
+                            and moving them to docker. With an interest in software development, I've lately become proficient in Javascript, and have written
                             my own applications and websites.
                         </p>
-                    </div>
-                    <div className="p-2">
-                        <h1 className="text-lg font-bold">My Tech Stack</h1>
-                        <p className="">
-                            <ul className="list-inside list-disc p-2 text-base font-medium">
-                                <li><b>JS: </b>Javascript, Express.js, React.js, TailwindCSS</li>
-                                <li><b>Cloud: </b>AWS and Terraform</li>
-                                <li><b>SysOps: </b>Containerization w/ 
-                                Docker, Orchestration w/ Kubernetes</li>
-                            </ul>
-                            There are plenty more, but those are the ones I've worked the most with and feel most
-                            comfortable with.
-                        </p>
-                    </div>
-                </div>
-                <div className="">
-                    <div className="p-2">
+
                         <h1 className="text-xl font-bold">What do I do?</h1>
                         <p>
                             lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
@@ -61,6 +45,21 @@ const HomePage = function () {
                             ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
                             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia laborum vero totam, praesentium adipisci tempora voluptatem repellat aut dignissimos. Optio asperiores ex explicabo id, possimus consectetur autem nisi veritatis?
+                        </p>
+
+                    </div>
+                    <div className="p-2">
+                        <h1 className="text-lg font-bold">My Tech Stack</h1>
+                        <p className="">
+                            <ul className="list-inside list-disc p-2 text-base font-medium">
+                                <li><b>JS: </b>Javascript, Express.js, React.js, TailwindCSS</li>
+                                <li><b>Cloud: </b>AWS and Terraform</li>
+                                <li><b>SysOps: </b>Containerization w/
+                                    Docker, Orchestration w/ Kubernetes</li>
+                                <li><b>CI/CD: </b>ArgoCD</li>
+                            </ul>
+                            There are plenty more, but those are the ones I've worked the most with and feel most
+                            comfortable with.
                         </p>
                     </div>
                 </div>
