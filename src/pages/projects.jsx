@@ -55,8 +55,8 @@ const Projects = function () {
         name: "File Explorer",
         imgSrc: './explorer.png',
         about: [
-            "As my first Fullstack project, it taught me everything I know about React.js. " +
-            "It's a simple file explorer with enough features to manage all your files and folders. It uses " +
+            "It's a simple file explorer with enough features to manage all your files and folders. " + 
+            " As my first Fullstack project, it taught me everything I know about React.js. It uses " +
             "an Express.js backend deployed on AWS EC2, an Amazon S3 bucket to store " +
             "all the files and folders, and a React.js frontend deployed with AWS' Amplify for easy CI/CD, and " +
             "SSL renewal."
@@ -125,7 +125,7 @@ const Projects = function () {
 
     const buttonCSS = "group py-3 px-2 m-2 hover:py-3 hover:bg-neutral-300 outline-none focus:outline bg-neutral-400 focus:bg-neutral-500 outline-offset-0 hover:outline rounded-lg hover:outline-8 hover:outline-neutral-200 focus:outline-4 shadow-2xl transition-all duration-300";
     const h1CSS = "p-2 font-semibold text-lg group-focus:text-gray-300 group-hover:text-sm group-hover:p-1 transition-all duration-300";
-    const imgCSS = "rounded-xl h-0 group-hover:h-20 w-full transition-all duration-300";
+    const imgCSS = "rounded-xl h-0 group-hover:h-20 group-hover:aspect-video w-full transition-all duration-300";
 
 
 
@@ -137,11 +137,11 @@ const Projects = function () {
         }, []),
 
         <>
-            <div className=" container mx-auto block p-4 mb-4 rounded-3xl shadow-3xl">
+            <div className="container mx-auto block p-4 mb-4 rounded-3xl shadow-3xl">
 
                 <div className="projects-container container mx-auto block p-4 md:grid mb-4 rounded-3xl shadow-3xl" style={{ gridTemplateColumns: "1fr 3fr 2fr" }}>
-                    <nav className='hidden flex-col justify-center me-4 my-4 md:flex text-center' >
-                        <h1 className="text-2xl font-semibold mb-4">Projects</h1>
+                    <nav className='hidden flex-col justify-start me-4 my-4 md:flex text-center' >
+                        <h1 className="text-xl font-semibold italic mb-4">Pick a project!</h1><i className="fa-solid fa-arrow-down"></i>
                         {
                             projects.map((btn) =>
                                 <button ref={btn.ref} key={btn.name} className={buttonCSS} onClick={() => { ProjectSelector(btn.name) }}>
