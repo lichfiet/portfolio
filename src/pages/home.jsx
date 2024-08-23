@@ -28,28 +28,24 @@ const HomePage = function () {
             </div>
 
             <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl mb-6" >
-                <div className="p-2 mb-4 grid grid-cols-1 md:grid-cols-2" style={{ gridTemplateColumns: "2fr 1fr" }}>
-                    <div>
+                <div className="p-2 mb-4 grid grid-cols-1 md:grid-cols-2" style={{ gridTemplateColumns: "1fr 1fr" }}>
+                    <div className="p-2">
                         <h1 className="text-xl font-bold mb-1">Who am I?</h1>
-                        <p className="mb-1 indent-2">
-                            I'm currently a <b>Customer Support Associate II</b>, and an in progress <b><i>DevOps Engineer</i></b>. After my first exposure
-                            to system administration in middle school with the help of my dad, who helped bring a Minecraft server
-                            online, I've had an interest in exploring operations and containerization, launching my servers in Docker.
-                        </p>
                         <p className="indent-2">
-                            Since then, I've held an interest in system administration and software development. More recently, I've
-                            been exploring DevOps principles, and how I can apply them to my personal projects, and with my development background,
-                            I found the mesh between operations and development to be a perfect fit for me.
+                            I'm a current <b>Customer Support Associate II</b>, and a <b><i>DevOps Engineer</i></b> to be. After my first exposure
+                            to SysOps in middle school, I've had an interest in exploring operations and containerization, launching game servers for fun,
+                            and moving them to docker. With an interest in software development, I've lately become proficient in Javascript, and have written 
+                            my own applications and websites.
                         </p>
                     </div>
                     <div className="p-2">
                         <h1 className="text-lg font-bold">My Tech Stack</h1>
                         <p className="">
                             <ul className="list-inside list-disc p-2 text-base font-medium">
-                                <li>Javascript, Express.js, React.js</li>
-                                <li>AWS and Terraform</li>
-                                <li>Containerization and development with Docker</li>
-                                <li>Orchestration w/ Kubernetes</li>
+                                <li><b>JS: </b>Javascript, Express.js, React.js, TailwindCSS</li>
+                                <li><b>Cloud: </b>AWS and Terraform</li>
+                                <li><b>SysOps: </b>Containerization w/ 
+                                Docker, Orchestration w/ Kubernetes</li>
                             </ul>
                             There are plenty more, but those are the ones I've worked the most with and feel most
                             comfortable with.

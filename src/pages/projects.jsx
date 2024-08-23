@@ -177,7 +177,7 @@ const Projects = function () {
                                 activeProjectData.repos.map((repo) => {
                                     return (
                                         <button className="bg-neutral-800 m-2 p-2 rounded-xl min-w-50">
-                                            <a key={repo.name} href={repo.link} className="text-white hover:text-gray-300 md:block"><i className="fab fa-github"></i>{repo.name}</a>
+                                            <a key={repo.name} href={repo.link} className="text-white hover:text-gray-300 md:block"><i className="fab fa-github"></i> { repo.name } </a>
                                         </button>
                                     )
                                 })
