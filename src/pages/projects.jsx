@@ -1,5 +1,6 @@
 import { useState, useRef, useEffect } from 'react';
 
+
 const Projects = function () {
     const [activeProject, setActiveProject] = useState(null);
     const [activeProjectData, setActiveProjectData] = useState({ name: "", imgSrc: "", about: [], techStack: [], ref: null, repos: [{ name: "", link: "" }] });
@@ -21,7 +22,14 @@ const Projects = function () {
 
     const Project2 = () => {
         return <>
-            <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x500'></img>
+            <div className="flex justify-center items-center content-center" >
+                <iframe
+                    className="hidden w-full sm:block iframe-mobile bg-white"
+                    src="https://trevorlichfield.com/home"
+                    title="File Explorer"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
+                <img className="block sm:hidden " src="./file explorer.png"></img>
+            </div>
         </>
     }
 
@@ -69,9 +77,10 @@ const Projects = function () {
             name: "Infrastructure", link: "https://github.com/lichfiet/file-explorer-infra"
         }]
     }, {
-        name: "Project 2",
+        name: "Portfolio",
         imgSrc: 'https://via.placeholder.com/600x300',
-        about: ["This is a placeholder for Project 2"],
+        about: ["This was my second attempt at making a portfolio, and I wanted to have created the whole site from scratch. " +
+            "This was my first exposure to TailwindCSS and I loved using it. My goal was to focus on scaling for mobile to make the website useable on all plafforms. "],
         techStack: ["Tech 1", "Tech 2", "Tech 3"],
         ref: null,
         repos: [{ name: "", link: "" }]
@@ -105,7 +114,7 @@ const Projects = function () {
             setActiveProject(<FileExplorer />);
             setActiveProjectData(projects[0]);
 
-        } else if (project === "Project 2") {
+        } else if (project === "Portfolio") {
             setActiveProject(<Project2 />);
             setActiveProjectData(projects[1]);
         } else if (project === "Project 3") {
@@ -128,9 +137,9 @@ const Projects = function () {
         }, []),
 
         <>
-            <div className=" container mx-auto block bg-neutral-200 p-4 mb-4 rounded-3xl shadow-3xl">
+            <div className=" container mx-auto block p-4 mb-4 rounded-3xl shadow-3xl">
 
-                <div className="projects-container container mx-auto block p-4 md:grid mb-4 rounded-3xl shadow-3xl" style={{ gridTemplateColumns: "2fr 13fr" }}>
+                <div className="projects-container container mx-auto block p-4 md:grid mb-4 rounded-3xl shadow-3xl" style={{ gridTemplateColumns: "1fr 3fr 2fr" }}>
                     <nav className='hidden flex-col justify-center me-4 my-4 md:flex text-center' >
                         <h1 className="text-2xl font-semibold mb-4">Projects</h1>
                         {
@@ -148,33 +157,33 @@ const Projects = function () {
                             {activeProject}
                         </div>
                     </div>
-                </div>
-                <div className="p-4 bg-neutral-300 rounded-xl block md:grid" style={{ gridTemplateColumns: "3fr 1fr" }}>
-                    <div className="p-2">
-                        <h1 className="text-xl font-bold mb-1 underline">About This Project.</h1>
-                        {
-                            activeProjectData.about.map((p) => <p key={p} className="p-2 indent-2">{p}</p>)
-                        }
-                    </div>
-                    <div className="p-2">
-                        <p className="text-lg font-bold">Tech Stack</p>
-                        <ul className="list-inside list-disc">
+                    <div className="p-4 bg-neutral-300 rounded-xl block">
+                        <div className="p-2">
+                            <h1 className="text-xl font-bold mb-1 underline">About This Project.</h1>
                             {
-                                activeProjectData.techStack.map((tech) => <li key={tech}>{tech}</li>)
+                                activeProjectData.about.map((p) => <p key={p} className="p-2 indent-2">{p}</p>)
                             }
-                        </ul>
+                        </div>
+                        <div className="p-2">
+                            <p className="text-lg font-bold">Tech Stack</p>
+                            <p className="list-disc">
+                                {
+                                    activeProjectData.techStack.map((tech) => tech + ", ")
+                                }
+                            </p>
+                        </div>
+                        <div className="flex flex-col p-6">
+                            {
+                                activeProjectData.repos.map((repo) => {
+                                    return (
+                                        <button className="bg-neutral-800 m-2 p-2 rounded-xl min-w-50">
+                                            <a key={repo.name} href={repo.link} className="text-white hover:text-gray-300 md:block"><i className="fab fa-github"></i>{repo.name}</a>
+                                        </button>
+                                    )
+                                })
+                            }
+                        </div>
                     </div>
-                </div>
-                <div className="sm:flex md:grid md:grid-cols-3 p-6 mx-auto">
-                    {
-                        activeProjectData.repos.map((repo) => {
-                            return (
-                                <button className="bg-neutral-800 m-2 p-2 rounded-xl min-w-50">
-                                    <a key={repo.name} href={repo.link} className="text-white hover:text-gray-300 md:block"><i className="fab fa-github"></i>{repo.name}</a>
-                                </button>
-                            )
-                        })
-                    }
                 </div>
             </div>
         </>
