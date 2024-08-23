@@ -65,7 +65,15 @@ export function NavBar() {
                             </a>
                         </li>
                     </ul>
-                    <ul className="ml-auto mr-2">
+                    <ul className="ml-auto mr-2 md:hidden">
+                        
+                        <li className="md:hidden">
+                            <i className="fa-solid fa-bars" onClick={handleMenuToggle}></i>
+                        </li>
+                    </ul>
+
+                    <ul className="ml-auto mr-2 md:hidden">
+                        
                         <li className="md:hidden">
                             <i className="fa-solid fa-bars" onClick={handleMenuToggle}></i>
                         </li>
