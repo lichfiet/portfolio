@@ -24,10 +24,10 @@ export function NavBar() {
     }
 
     return (
-        <div className="backgroundimage">
+        <div className="backgroundimage p-6">
             { /* NAVIGATION BAR FOR LARGER SCREENS */ }
-            <div className="flex justify-center items-center p-6">
-                <nav className="flex items-center space-x-16 md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm">
+            <div className="flex justify-center items-center">
+                <nav className=" md:container flex items-center space-x-16 md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm w-full mx-auto">
                     <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold text-gray-800 cursor-pointer">
                         trevor lichfield
                     </a>
@@ -70,8 +70,6 @@ export function NavBar() {
                             <i className="fa-solid fa-bars" onClick={handleMenuToggle}></i>
                         </li>
                     </ul>
-
-
                 </nav>
             </div >
 
