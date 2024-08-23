@@ -15,7 +15,7 @@ const Projects = function () {
                     src="https://files.trevorlichfield.com"
                     title="File Explorer"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
-                <img className="block sm:hidden " src="./file explorer.png"></img>
+                <img className="block sm:hidden p-4" src="./file explorer.png"></img>
             </div>
         </>
     };
@@ -28,24 +28,12 @@ const Projects = function () {
                     src="https://trevorlichfield.com/home"
                     title="File Explorer"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
-                <img className="block sm:hidden " src="./file explorer.png"></img>
+                <img className="flex sm:hidden" src="./file explorer.png"></img>
             </div>
         </>
     }
 
     const Project3 = () => {
-        return <>
-            <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x500'></img>
-        </>
-    }
-
-    const Project4 = () => {
-        return <>
-            <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x500'></img>
-        </>
-    }
-
-    const Project5 = () => {
         return <>
             <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x500'></img>
         </>
@@ -88,20 +76,6 @@ const Projects = function () {
         name: "Project 3",
         imgSrc: 'https://via.placeholder.com/600x300',
         about: ["This is a placeholder for Project 3"],
-        techStack: ["Tech 1", "Tech 2", "Tech 3"],
-        ref: null,
-        repos: [{ name: "", link: "" }]
-    }, {
-        name: "Project 4",
-        imgSrc: 'https://via.placeholder.com/600x300',
-        about: ["This is a placeholder for Project 4"],
-        techStack: ["Tech 1", "Tech 2", "Tech 3"],
-        ref: null,
-        repos: [{ name: "", link: "" }]
-    }, {
-        name: "Project 5",
-        imgSrc: 'https://via.placeholder.com/600x300',
-        about: ["This is a placeholder for Project 5"],
         techStack: ["Tech 1", "Tech 2", "Tech 3"],
         ref: null,
         repos: [{ name: "", link: "" }]
@@ -150,22 +124,24 @@ const Projects = function () {
                                 </button>
                             )
                         }
+                        <h1 className="text-xl font-semibold italic mb-4">TBA..</h1>
                     </nav>
                     <div className="rounded-xl mr-4">
-                        <h1 className="font-bold text-4xl text-center">{activeProjectData.name}</h1>
+                        {/** ACTIVE PROJECT AND NAME */}
+                        <h1 className="font-semibold md:font-bold text-3xl md:text-4xl text-center">{activeProjectData.name}</h1>
                         <div className="rounded-3xl shadow-3xl">
                             {activeProject}
                         </div>
                     </div>
                     <div className="p-4 bg-neutral-300 rounded-xl block">
                         <div className="p-2">
-                            <h1 className="text-xl font-bold mb-1 underline">About This Project.</h1>
+                            <h1 className="text-lg md:text-xl font-bold mb-1 underline">About This Project.</h1>
                             {
-                                activeProjectData.about.map((p) => <p key={p} className="p-2 indent-2">{p}</p>)
+                                activeProjectData.about.map((p) => <p key={p} className="p-2 indent-2 text-sm md:text-base">{p}</p>)
                             }
                         </div>
                         <div className="p-2">
-                            <p className="text-lg font-bold">Tech Stack</p>
+                            <p className="text-base md:text-lg font-bold">Tech Stack</p>
                             <p className="list-disc">
                                 {
                                     activeProjectData.techStack.map((tech) => tech + ", ")

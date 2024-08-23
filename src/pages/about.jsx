@@ -41,13 +41,15 @@ const About = function () {
                         </p>
                     </div>
                 </div>
-                <h1 className="text-xl font-semibold">Music</h1>
-                <div className="p-2">
+                <h1 className="text-2xl font-semibold">Music</h1>
                     <p className="indent-3 mb-5">
                         I think music is very important to me. It's accompanied many emotions in my life and I think I have quite the taste. Below is a 
                         window into my soul, and also my favorite playlist of pre 2000's music I regularly listen to.
                     </p>
-                    <iframe src="https://open.spotify.com/embed/playlist/0G7BnxP1X1M827QDhg0AB5?utm_source=generator" width="100%" height="380" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                
+                <div className="grid grid-cols-2 gap-7">
+                    <iframe src="https://open.spotify.com/embed/playlist/0G7BnxP1X1M827QDhg0AB5?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
+                    <iframe src="https://open.spotify.com/embed/playlist/0G7BnxP1X1M827QDhg0AB5?utm_source=generator" width="100%" height="400" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"></iframe>
                 </div>
             </div>
         </div >

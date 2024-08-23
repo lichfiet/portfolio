@@ -24,7 +24,7 @@ export function NavBar() {
     }
 
     return (
-        <div className="backgroundimage p-6 h-screen">
+        <div className="backgroundimage p-6 h-full">
             { /* NAVIGATION BAR FOR LARGER SCREENS */}
             <div className="flex justify-center items-center">
                 <nav className="container flex flex-row items-center md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm w-full mx-auto">
@@ -65,13 +65,6 @@ export function NavBar() {
                             </a>
                         </li>
                     </ul>
-                    <ul className="ml-auto mr-2 md:hidden">
-                        
-                        <li className="md:hidden">
-                            <i className="fa-solid fa-bars" onClick={handleMenuToggle}></i>
-                        </li>
-                    </ul>
-
                     <ul className="ml-auto mr-2 md:hidden">
                         
                         <li className="md:hidden">

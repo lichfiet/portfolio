@@ -3,108 +3,46 @@ import '/background.png';
 const HomePage = function () {
 
     return (
-        <div>
-            {
-                /**
-                 * !NOTES
-                 * - keep nav lowercase, upper case headings and sentences
-                 */
-            }
-            <div className="container p-6 max-w-sm mx-auto sm:bg-none">
-                <div className="flex my-5 md:my-10 justify-center md:justify-start">
-                    <div className="md:grid-cols-2 grid sm:grid-cols-1">
-                        <div className="md:flex content-center justify-center">
-                            <img src="https://via.placeholder.com/200" alt="profile picture" />
+        <div className="flex justify-center content-center h-full">
+            <div className="container content-center justify-center mb-10 px-20 mx-auto">
+                <div className="block md:grid my-5 md:my-10 justify-center md:justify-start" style={{ gridTemplateColumns: "1fr 1fr" }}>
+                    <div className="content-center">
+                        <div className="md:flex content-center justify-start">
+                            <img src="https://via.placeholder.com/250" alt="profile picture" />
                         </div>
-                        <div className="flex items-end justify-start">
-                            <ul className="p-4 text-center md:text-left">
-                                <li className="font-medium">Hey! <i className="font-light">My name is,</i></li>
-                                <li><b>Trevor Lichfield</b>, 20 yrs. Old</li>
-                                <li className="font-light italic underline">Fullstack & DevOps Engineer</li>
+                        <div className="flex justify-start">
+                            <ul className="p-4 text-left ">
+                                <li className="font-medium text-lg">Hey! <i className="font-light">My name is,</i></li>
+                                <li className="text-4xl italic hover:not-italic"><b>Trevor Lichfield</b>, 20 yrs. Old</li>
+                                <li className="font-light text-xl italic underline">Fullstack & DevOps Engineer</li>
                             </ul>
                         </div>
                     </div>
-                </div>
-            </div>
-
-            <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl mb-6" >
-                <div className="p-2 mb-4 md:grid md:grid-cols-2 sm:block" style={{ gridTemplateColumns: "3fr 1fr" }}>
-                    <div className="p-2 mr-5">
-                        <h1 className="text-xl font-bold mb-1">Who am I?</h1>
-                        <p className="indent-2">
-                            I'm a current <b>Customer Support Associate II</b>, and a <b><i>DevOps Engineer</i></b> to be. After my first exposure
-                            to SysOps in middle school, I've had an interest in exploring operations and containerization, launching game servers for fun,
-                            and moving them to docker. With an interest in software development, I've lately become proficient in Javascript, and have written
-                            my own applications and websites.
-                        </p>
-
-                        <h1 className="text-xl font-bold">What do I do?</h1>
-                        <p>
-                            lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt
-                            ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-                            ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-                            reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum quia laborum vero totam, praesentium adipisci tempora voluptatem repellat aut dignissimos. Optio asperiores ex explicabo id, possimus consectetur autem nisi veritatis?
-                        </p>
-
-                    </div>
-                    <div className="p-2">
-                        <h1 className="text-lg font-bold">My Tech Stack</h1>
-                        <p className="">
-                            <ul className="list-inside list-disc p-2 text-base font-medium">
-                                <li><b>JS: </b>Javascript, Express.js, React.js, TailwindCSS</li>
-                                <li><b>Cloud: </b>AWS and Terraform</li>
-                                <li><b>SysOps: </b>Containerization w/
-                                    Docker, Orchestration w/ Kubernetes</li>
-                                <li><b>CI/CD: </b>ArgoCD</li>
-                            </ul>
-                            There are plenty more, but those are the ones I've worked the most with and feel most
-                            comfortable with.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div className="container p-6 max-w-sm mx-auto sm:bg-none">
-                <div className="flex mb-6 justify-center">
-                    <div className="">
-                        <div className="hidden md:flex content-center justify-left">
-                            <img src="https://via.placeholder.com/1000x300" alt="profile picture" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div className="container p-6 max-w-sm mx-auto bg-neutral-200 rounded-xl shadow-xl">
+                    <div className="p-6 bg-neutral-200 rounded-xl shadow-xl">
                 <h1 className="text-xl font-bold">
-                    What can I do for you?
+                    About Me
                 </h1>
-                <div className="p-2 flex flex-col justify-center">
-                    <p className="mb-6">
-                        If you're looking for a developer who is passionate, flexible, curious, and dedicated (for better or worse), then you've
-                        come to the right place! Take a look around my portfolio for a better idea of what I can do, and feel free
-                        to <b>contact me</b> and let me know how I can make your life easier.
-                    </p>
-
-                    <div className="bg-black p-2 bg-opacity-20 mx-2 rounded-lg">
-                        <ul className="grid grid-cols-1 md:grid-cols-2 justify-center text-center">
-                            <div className="p-2">
-                                <li className="">
-                                    <a className="text-gray-800 hover:text-gray-600" href="https://www.linkedin.com/in/tlichfield/">
-                                        <i className="fab fa-linkedin-in hover:text-white text-neutral-100 text-2xl md:text-4xl"></i>
-                                    </a>
-                                    <p className="hover:text-white text-neutral-100 text-base md:text-xl">linkedin.com/trevorlichfield</p>
-                                </li>
-                            </div>
-                            <div>
-                                <li className="">
-                                    <a className="text-gray-800 hover:text-white-600">
-                                        <i className="fas fa-envelope hover:text-white text-neutral-100 text-2xl md:text-4xl"></i>
-                                    </a>
-                                    <p className="hover:text-white text-neutral-100 text-base md:text-xl">trevor@lichfieldfamily.com</p>
-                                </li>
-                            </div>
-                        </ul>
+                <div className="p-2">
+                    <div id="work-lightspeed" className="">
+                        <p className="indent-3 mb-2">
+                            I've always been interested in technology, starting
+                            with my family's first computer, where I played a lot of classic computer games like
+                            Roller Coaster Tycoon, and an early Roblox. Later, I would have my first
+                            exposure to web development, modifying free HTML templates for an SEO project. I ended up taking 
+                            a simple Javascript class 
+                            in middle school, learned how to deploy Minecraft servers on docker with my dad, and have enjoyed 
+                            exploring new technologies in my current software support role ever since.
+                        </p>
+                        <p className="indent-3 mb-2">
+                            When I'm not coding, you can find me anxiously watering my plants, rock climbing, playing video games, or
+                            spending time with my girlfriend and our wonderful pets. I also enjoy a good iced coffee when the opportunity 
+                            to have one presents itself. When I do have coffee, I aim to drink it whilst
+                            on vacation, or somewhere far from home. I love to travel, and have recently been to Seattle, Washington which
+                            I wholeheartedly recommend anyone <i>drive to</i> and visit.
+                        </p>
                     </div>
-
+                    </div>
+                    </div>
                 </div>
             </div>
         </div>
