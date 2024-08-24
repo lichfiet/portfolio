@@ -4,7 +4,8 @@ import './background.css';
 
 
 export function NavBar() {
-    const [theme, setTheme] = useState("light");
+    const prefersDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    const [theme, setTheme] = useState(prefersDarkMode ? "dark" : "light");
 
     let navigate = useNavigate();
     const [selectedOption, setSelectedOption] = useState("");
@@ -35,14 +36,14 @@ export function NavBar() {
                             <i className="h-4 w-6 text-xl fa-solid fa-sun" onClick={() => setTheme("dark")}></i>
                         </button>
                     ) : (
-                        <button className="p-2 rounded-full bg-neutral-600 outline outline-white outline-1 flex justify-center items-center">
+                        <button className="p-2 rounded-full bg-neutral-800 outline outline-white outline-1 flex justify-center items-center">
                             <i className="h-6 w-6 text-xl text-white fa-solid fa-moon" onClick={() => setTheme("light")}></i>
                         </button>
                     )}
             </div>
             { /* NAVIGATION BAR FOR LARGER SCREENS */}
             <div className="p-6 justify-center items-center">
-                <nav className="container flex flex-row items-center md:space-x-4 dark:bg-neutral-600 bg-neutral-200 text-gray-800 p-3 px-4 lg:px-9 rounded-3xl shadow-xl w-full mx-auto">
+                <nav className="container flex flex-row items-center md:space-x-4 dark:bg-neutral-800 bg-neutral-200 text-gray-800 p-3 px-4 lg:px-9 rounded-3xl shadow-xl w-full mx-auto">
                     <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold dark:text-white  cursor-pointer">
                         trevor lichfield
                     </a>

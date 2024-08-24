@@ -96,7 +96,7 @@ const Projects = function () {
         }
     }
 
-    const buttonCSS = "group py-3 px-2 m-2 hover:py-3 outline-none focus:outline focus:bg-neutral-500 outline-offset-0 hover:outline rounded-lg hover:outline-8 focus:outline-4 shadow-2xl transition-all duration-300 dark:bg-neutral-600  dark:hover:bg-neutral-500 hover:bg-neutral-200 bg-neutral-300 hover:outline-neutral-200 dark:hover:outline-neutral-400";
+    const buttonCSS = "group py-3 px-2 m-2 hover:py-3 outline-none focus:outline focus:bg-neutral-500 outline-offset-0 hover:outline rounded-lg hover:outline-8 focus:outline-4 shadow-2xl transition-all duration-300 dark:bg-neutral-800  dark:hover:bg-neutral-500 hover:bg-neutral-200 bg-neutral-300 hover:outline-neutral-200 dark:hover:outline-neutral-400";
     const h1CSS = "p-2 font-semibold text-lg group-focus:text-gray-300 group-hover:text-sm group-hover:p-1 transition-all duration-300 text-black dark:text-white";
     const imgCSS = "rounded-xl h-0 group-hover:h-20 group-hover:aspect-video w-full transition-all duration-300";
 
@@ -132,7 +132,7 @@ const Projects = function () {
                             {activeProject}
                         </div>
                     </div>
-                    <div className="p-4 bg-neutral-300 dark:bg-neutral-600 rounded-xl block">
+                    <div className="p-4 bg-neutral-300 dark:bg-neutral-800 rounded-xl block">
                         <div className="p-2">
                             <h1 className="text-lg md:text-xl font-bold mb-1 underline">About This Project.</h1>
                             {

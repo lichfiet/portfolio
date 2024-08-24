@@ -11,7 +11,7 @@ const About = function () {
             </div>
 
             {/* Content Start */}
-            <div className="container mx-auto p-6 dark:bg-neutral-600 bg-neutral-200 rounded-xl shadow-xl">
+            <div className="container mx-auto p-6 dark:bg-neutral-800 bg-neutral-200 rounded-xl shadow-xl">
                 <h1 className="text-xl font-bold">
                     About Me
                 </h1>

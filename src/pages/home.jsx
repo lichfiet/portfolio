@@ -20,12 +20,12 @@ const HomePage = function () {
                     </div>
                 </div>
                 <div className="flex justify-center content-center mx-5 md:mx-10">
-                    <div className="p-6 my-auto dark:bg-neutral-600 bg-neutral-200 rounded-lg shadow-2xl flex flex-col h-fit">
+                    <div className="p-6 my-auto dark:bg-neutral-800 bg-neutral-200 rounded-lg shadow-2xl flex flex-col h-fit">
                         <h1 className="md:text-base lg:text-lg font-bold text-center text-black dark:text-white">
                             Where am I?
                         </h1>
                         <p className="indent-3 mb-2 text-sm lg:text-base text-black dark:text-white">
-                            Well, first, thanks for checking out my site! It's supposed to serve as a home for all my projects and
+                            Well, first, thanks stopping by! This website is supposed to serve as a home for all my projects and
                             things I've worked on over my years so you can take a look at em'. 
                         </p>
                         <p className='p-1 text-center text-black dark:text-white'>
