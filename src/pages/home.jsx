@@ -11,17 +11,17 @@ const HomePage = function () {
                     </div>
                     <div className="flex justify-start">
                         <ul className="p-4 text-left ">
-                            <li className="font-medium text-lg">Hey! <i className="font-light">My name is,</i></li>
-                            <li className="text-3xl italic hover:not-italic"><b>Trevor Lichfield</b>, 20 yrs. Old</li>
-                            <li className="font-light text-lg italic underline">Fullstack & DevOps Engineer</li>
+                            <li className="font-medium text-base lg:text-lg">Hey! <i className="font-light">My name is,</i></li>
+                            <li className="text-xl lg:text-3xl italic hover:not-italic"><b>Trevor Lichfield</b>, 20 yrs. Old</li>
+                            <li className="font-light text-base lg:text-lg italic underline">Fullstack & DevOps Engineer</li>
                         </ul>
                     </div>
                 </div>
                 <div className="p-6 bg-neutral-200 rounded-lg shadow-2xl flex justify-center flex-col">
-                    <h1 className="text-xl font-bold text-center">
-                        About Me
+                    <h1 className="md:text-base lg:text-lg font-bold text-center">
+                        Who am I?
                     </h1>
-                    <p className="indent-3 mb-2">
+                    <p className="indent-3 mb-2 text-sm lg:text-base">
                         I've always been interested in technology, starting
                         with my family's first computer, where I played a lot of classic computer games like
                         Roller Coaster Tycoon, and an early Roblox. Later, I would have my first
@@ -32,14 +32,15 @@ const HomePage = function () {
                     </p>
                     <div className="my-0 md:my-auto justify-center content-center">
                         <h1 className='text-center mb-2 italic'>my tech stack</h1>
-                        <div class="flex justify-center text-3xl gap-6">
-                            <i class="devicon-amazonwebservices-plain-wordmark"></i>
-                            <i class="devicon-tailwindcss-original"></i>
-                            <i class="devicon-express-original"></i>
+                        <div class="flex justify-center text-3xl gap-3 overflow-x-auto">
                             <i class="devicon-react-original"></i>
+                            <i class="devicon-express-original"></i>
+                            <i class="devicon-tailwindcss-original"></i>
+                            <i class="devicon-amazonwebservices-plain-wordmark"></i>
                             <i class="devicon-terraform-plain"></i>
-                            <i class="devicon-argocd-plain"></i>
+                            <i class="devicon-docker-plain"></i>
                             <i class="devicon-kubernetes-plain"></i>
+                            <i class="devicon-argocd-plain"></i>
                         </div>
                     </div>
                 </div>

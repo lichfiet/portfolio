@@ -11,11 +11,11 @@ const Projects = function () {
         return <>
             <div className="flex justify-center items-center content-center" >
                 <iframe
-                    className="hidden w-full sm:block iframe-mobile"
+                    className="hidden w-full md:block iframe-mobile"
                     src="https://files.trevorlichfield.com"
                     title="File Explorer"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
-                <img className="block sm:hidden p-4" src="./file explorer.png"></img>
+                <img className="block md:hidden p-4" src="./file explorer.png"></img>
             </div>
         </>
     };
@@ -28,7 +28,6 @@ const Projects = function () {
                     src="https://trevorlichfield.com/home"
                     title="File Explorer"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media"></iframe>
-                <img className="flex sm:hidden" src="./file explorer.png"></img>
             </div>
         </>
     }
