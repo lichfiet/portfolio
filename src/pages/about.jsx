@@ -1,10 +1,10 @@
 const About = function () {
 
     return (
-        <div className="container mx-auto">
+        <div className="container mx-auto px-20">
 
             {/* Picture of me and background */}
-            <div className="flex justify-center about-background">
+            <div className="flex justify-center about-background dark:bg-neutral-600">
                 <div className="flex content-center justify-left p-8">
                     <img className="about-me" src="https://via.placeholder.com/200" alt="profile picture" />
                 </div>
@@ -34,15 +34,15 @@ const About = function () {
                 </div>
                 <div className="mt-4  justify-center content-center">
                     <h1 className='text-center mb-2 italic'>my tech stack</h1>
-                    <div class="flex justify-center text-3xl gap-3 overflow-x-auto">
-                        <i class="devicon-react-original"></i>
-                        <i class="devicon-express-original"></i>
-                        <i class="devicon-tailwindcss-original"></i>
-                        <i class="devicon-amazonwebservices-plain-wordmark"></i>
-                        <i class="devicon-terraform-plain"></i>
-                        <i class="devicon-docker-plain"></i>
-                        <i class="devicon-kubernetes-plain"></i>
-                        <i class="devicon-argocd-plain"></i>
+                    <div className="flex justify-center text-3xl gap-3 overflow-x-auto">
+                        <i className="devicon-react-original"></i>
+                        <i className="devicon-express-original"></i>
+                        <i className="devicon-tailwindcss-original"></i>
+                        <i className="devicon-amazonwebservices-plain-wordmark"></i>
+                        <i className="devicon-terraform-plain"></i>
+                        <i className="devicon-docker-plain"></i>
+                        <i className="devicon-kubernetes-plain"></i>
+                        <i className="devicon-argocd-plain"></i>
                     </div>
                 </div>
                 <h1 className="text-2xl font-semibold">Music</h1>

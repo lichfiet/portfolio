@@ -34,7 +34,7 @@ const Projects = function () {
 
     const Project3 = () => {
         return <>
-            <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x500'></img>
+            <img className={`self-center items-center mx-auto`} src='https://via.placeholder.com/1100x900'></img>
         </>
     }
 

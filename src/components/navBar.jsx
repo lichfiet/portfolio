@@ -27,8 +27,8 @@ export function NavBar() {
     }
 
     return (
-        <div className={`${theme === 'light' ? "backgroundLightMode" : "backgroundDarkMode" } flex flex-col min-h-screen ${theme} text-black dark:text-white`}>
-            <div className="absolute bottom-0 p-3">
+        <div className={`${theme === 'light' ? "backgroundLightMode" : "backgroundDarkMode" } flex flex-col min-h-screen ${theme} text-black dark:text-gray-300`}>
+            <div className="fixed bottom-0 p-2">
                 {
                     /* THEME TOGGLE BUTTON */
                     theme === "light" ? (
@@ -37,19 +37,19 @@ export function NavBar() {
                         </button>
                     ) : (
                         <button className="p-2 rounded-full bg-neutral-800 outline outline-white outline-1 flex justify-center items-center">
-                            <i className="h-6 w-6 text-xl text-white fa-solid fa-moon" onClick={() => setTheme("light")}></i>
+                            <i className="h-6 w-6 text-xl fa-solid fa-moon" onClick={() => setTheme("light")}></i>
                         </button>
                     )}
             </div>
             { /* NAVIGATION BAR FOR LARGER SCREENS */}
             <div className="p-6 justify-center items-center">
                 <nav className="container flex flex-row items-center md:space-x-4 dark:bg-neutral-800 bg-neutral-200 text-gray-800 p-3 px-4 lg:px-9 rounded-3xl shadow-xl w-full mx-auto">
-                    <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold dark:text-white  cursor-pointer">
+                    <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold dark:text-gray-300  cursor-pointer">
                         trevor lichfield
                     </a>
                     <ul className="flex space-x-4 ">
                         <li className="hidden md:block text-gray-800">
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("home") }} className="dark:text-white hover:text-gray-400 hidden md:block">
+                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("home") }} className="dark:text-gray-300 hover:text-gray-400 hidden md:block">
                                 home
                             </a>
                         </li>
@@ -59,24 +59,24 @@ export function NavBar() {
                             </a>
                         </li> */}
                         <li className="hidden md:block text-gray-800">
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("projects") }} className="dark:text-white hover:text-gray-400 hidden md:block">
+                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("projects") }} className="dark:text-gray-300 hover:text-gray-400 hidden md:block">
                                 portfolio
                             </a>
                         </li>
                         <li className="hidden md:block text-gray-800">
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("about") }} className="dark:text-white hover:text-gray-400 hidden md:block">
+                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("about") }} className="dark:text-gray-300 hover:text-gray-400 hidden md:block">
                                 about
                             </a>
                         </li>
                         <li className="hidden md:block text-gray-800">
-                            <a className="dark:text-white hover:text-gray-400 hidden md:block" href="https://github.com/lichfiet">
+                            <a className="dark:text-gray-300 hover:text-gray-400 hidden md:block" href="https://github.com/lichfiet">
                                 <i className="fab fa-github"></i>
                             </a>
                         </li>
 
 
                         <li className="hidden md:block text-gray-800">
-                            <a className="dark:text-white hover:text-gray-400 hidden md:block" href="https://www.linkedin.com/in/tlichfield/">
+                            <a className="dark:text-gray-300 hover:text-gray-400 hidden md:block" href="https://www.linkedin.com/in/tlichfield/">
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
                         </li>
@@ -84,7 +84,7 @@ export function NavBar() {
                     <ul className="ml-auto mr-2 md:hidden text-gray-800">
 
                         <li className="md:hidden">
-                            <i className="fa-solid fa-bars" onClick={handleMenuToggle}></i>
+                            <i className="text-black dark:text-gray-300 hover:text-gray-400 fa-solid fa-bars" onClick={handleMenuToggle}></i>
                         </li>
                     </ul>
                 </nav>
@@ -95,7 +95,7 @@ export function NavBar() {
                 /* MENU FOR SMALLER SCREENS */
             }
             {isMenuOpen && (
-                <div className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
+                <div onClick={handleMenuToggle} className="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 flex justify-center items-center">
                     <ul className="flex flex-col space-y-4 text-center">
                         <li>
                             <i className="fa-solid fa-x text-6xl text-white hover:text-gray-400" onClick={handleMenuToggle}></i>
