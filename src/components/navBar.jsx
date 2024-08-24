@@ -24,10 +24,10 @@ export function NavBar() {
     }
 
     return (
-        <div className="backgroundimage p-6 h-full">
+        <div className="backgroundimage min-h-screen">
             { /* NAVIGATION BAR FOR LARGER SCREENS */}
-            <div className="flex justify-center items-center">
-                <nav className="container flex flex-row items-center md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-sm w-full mx-auto">
+            <div className="p-6 flex justify-center items-center">
+                <nav className="container flex flex-row items-center md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-xl w-full mx-auto">
                     <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold text-gray-800 cursor-pointer">
                         trevor lichfield
                     </a>
@@ -102,8 +102,8 @@ export function NavBar() {
                     </ul>
                 </div>
             )}
-
             <Outlet />
+    
         </div>
     );
 }
