@@ -96,8 +96,8 @@ const Projects = function () {
         }
     }
 
-    const buttonCSS = "group py-3 px-2 m-2 hover:py-3 hover:bg-neutral-300 outline-none focus:outline bg-neutral-400 focus:bg-neutral-500 outline-offset-0 hover:outline rounded-lg hover:outline-8 hover:outline-neutral-200 focus:outline-4 shadow-2xl transition-all duration-300";
-    const h1CSS = "p-2 font-semibold text-lg group-focus:text-gray-300 group-hover:text-sm group-hover:p-1 transition-all duration-300";
+    const buttonCSS = "group py-3 px-2 m-2 hover:py-3 outline-none focus:outline focus:bg-neutral-500 outline-offset-0 hover:outline rounded-lg hover:outline-8 focus:outline-4 shadow-2xl transition-all duration-300 dark:bg-neutral-600  dark:hover:bg-neutral-500 hover:bg-neutral-200 bg-neutral-300 hover:outline-neutral-200 dark:hover:outline-neutral-400";
+    const h1CSS = "p-2 font-semibold text-lg group-focus:text-gray-300 group-hover:text-sm group-hover:p-1 transition-all duration-300 text-black dark:text-white";
     const imgCSS = "rounded-xl h-0 group-hover:h-20 group-hover:aspect-video w-full transition-all duration-300";
 
 
@@ -110,7 +110,7 @@ const Projects = function () {
         }, []),
 
         <>
-            <div className="container mx-auto block p-4 mb-4 rounded-3xl shadow-3xl">
+            <div className="text-black dark:text-white container mx-auto block p-4 mb-4 rounded-3xl shadow-3xl">
 
                 <div className="projects-container container mx-auto block p-4 md:grid mb-4 rounded-3xl shadow-3xl" style={{ gridTemplateColumns: "1fr 3fr 2fr" }}>
                     <nav className='hidden flex-col justify-start me-4 my-4 md:flex text-center' >
@@ -127,12 +127,12 @@ const Projects = function () {
                     </nav>
                     <div className="rounded-xl mr-4">
                         {/** ACTIVE PROJECT AND NAME */}
-                        <h1 className="font-semibold md:font-bold text-3xl md:text-4xl text-center">{activeProjectData.name}</h1>
+                        <h1 className="text-black dark:text-white font-semibold md:font-bold text-3xl md:text-4xl text-center">{activeProjectData.name}</h1>
                         <div className="rounded-3xl shadow-3xl">
                             {activeProject}
                         </div>
                     </div>
-                    <div className="p-4 bg-neutral-300 rounded-xl block">
+                    <div className="p-4 bg-neutral-300 dark:bg-neutral-600 rounded-xl block">
                         <div className="p-2">
                             <h1 className="text-lg md:text-xl font-bold mb-1 underline">About This Project.</h1>
                             {

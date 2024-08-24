@@ -4,6 +4,8 @@ import './background.css';
 
 
 export function NavBar() {
+    const [theme, setTheme] = useState("light");
+
     let navigate = useNavigate();
     const [selectedOption, setSelectedOption] = useState("");
 
@@ -24,16 +26,29 @@ export function NavBar() {
     }
 
     return (
-        <div className="backgroundimage flex flex-col min-h-screen">
+        <div className={`${theme === 'light' ? "backgroundLightMode" : "backgroundDarkMode" } flex flex-col min-h-screen ${theme} text-black dark:text-white`}>
+            <div className="absolute bottom-0 p-3">
+                {
+                    /* THEME TOGGLE BUTTON */
+                    theme === "light" ? (
+                        <button className="p-2 rounded-full bg-white outline outline-black outline-1">
+                            <i className="h-4 w-6 text-xl fa-solid fa-sun" onClick={() => setTheme("dark")}></i>
+                        </button>
+                    ) : (
+                        <button className="p-2 rounded-full bg-neutral-600 outline outline-white outline-1 flex justify-center items-center">
+                            <i className="h-6 w-6 text-xl text-white fa-solid fa-moon" onClick={() => setTheme("light")}></i>
+                        </button>
+                    )}
+            </div>
             { /* NAVIGATION BAR FOR LARGER SCREENS */}
             <div className="p-6 justify-center items-center">
-                <nav className="container flex flex-row items-center md:space-x-4 bg-neutral-200 p-3 px-4 lg:px-9 rounded-3xl shadow-xl w-full mx-auto">
-                    <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold text-gray-800 cursor-pointer">
+                <nav className="container flex flex-row items-center md:space-x-4 dark:bg-neutral-600 bg-neutral-200 text-gray-800 p-3 px-4 lg:px-9 rounded-3xl shadow-xl w-full mx-auto">
+                    <a onClick={() => handleChange("home")} className="text-md md:text-lg font-bold dark:text-white  cursor-pointer">
                         trevor lichfield
                     </a>
-                    <ul className="flex space-x-4">
-                        <li className="hidden md:block">
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("home") }} className="text-gray-800 hover:text-gray-400 hidden md:block">
+                    <ul className="flex space-x-4 ">
+                        <li className="hidden md:block text-gray-800">
+                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("home") }} className="dark:text-white hover:text-gray-400 hidden md:block">
                                 home
                             </a>
                         </li>
@@ -42,31 +57,31 @@ export function NavBar() {
                                 work
                             </a>
                         </li> */}
-                        <li className="hidden md:block">
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("projects") }} className="text-gray-800 hover:text-gray-400 hidden md:block">
+                        <li className="hidden md:block text-gray-800">
+                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("projects") }} className="dark:text-white hover:text-gray-400 hidden md:block">
                                 portfolio
                             </a>
                         </li>
-                        <li className="hidden md:block">
-                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("about") }} className="text-gray-800 hover:text-gray-400 hidden md:block">
+                        <li className="hidden md:block text-gray-800">
+                            <a href="#" onClick={(e) => { e.preventDefault(); handleChange("about") }} className="dark:text-white hover:text-gray-400 hidden md:block">
                                 about
                             </a>
                         </li>
-                        <li className="hidden md:block">
-                            <a className="text-gray-800 hover:text-gray-600 hidden md:block" href="https://github.com/lichfiet">
+                        <li className="hidden md:block text-gray-800">
+                            <a className="dark:text-white hover:text-gray-400 hidden md:block" href="https://github.com/lichfiet">
                                 <i className="fab fa-github"></i>
                             </a>
                         </li>
 
 
-                        <li className="hidden md:block">
-                            <a className="text-gray-800 hover:text-gray-600" href="https://www.linkedin.com/in/tlichfield/">
+                        <li className="hidden md:block text-gray-800">
+                            <a className="dark:text-white hover:text-gray-400 hidden md:block" href="https://www.linkedin.com/in/tlichfield/">
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
                         </li>
                     </ul>
-                    <ul className="ml-auto mr-2 md:hidden">
-                        
+                    <ul className="ml-auto mr-2 md:hidden text-gray-800">
+
                         <li className="md:hidden">
                             <i className="fa-solid fa-bars" onClick={handleMenuToggle}></i>
                         </li>
@@ -105,7 +120,7 @@ export function NavBar() {
             <div className="flex flex-grow overflow-auto">
                 <Outlet />
             </div>
-    
+
         </div>
     );
 }
