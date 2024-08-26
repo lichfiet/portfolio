@@ -1,7 +1,7 @@
 const About = function () {
 
     return (
-        <div className="container mx-auto px-20">
+        <div className="container mx-auto px-5 md:px-20">
 
             {/* Picture of me and background */}
             <div className="flex justify-center about-background dark:bg-neutral-600">

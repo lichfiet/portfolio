@@ -29,10 +29,10 @@ const HomePage = function () {
                             things I've worked on over my years so you can take a look at em'. 
                         </p>
                         <p className='p-1 text-center text-black dark:text-white'>
-                            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/projects') }} className="italic font-semibold">Click here for Projects</a>
+                            <a href="./projects" onClick={(e) => { }} className="italic font-semibold">Click here for Projects</a>
                         </p>
                         <p className='p-1 text-center'>
-                            <a href="#" onClick={(e) => { e.preventDefault(); navigate('/about') }} className="italic font-semibold">Click here to read About Me</a>
+                            <a href="./about" onClick={(e) => { }} className="italic font-semibold">Click here to read About Me</a>
                         </p>
                     </div>
                 </div>
