@@ -80,6 +80,12 @@ export function NavBar() {
                                 <i className="fab fa-linkedin-in"></i>
                             </a>
                         </li>
+
+                        <li className="hidden md:block text-gray-800">
+                            <a className="dark:text-gray-300 hover:text-gray-400 hidden md:block" href="https://trevorresourcepack.s3.us-west-1.amazonaws.com/Resume.pdf?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AKIAVC2IB2O24EWP4GUJ%2F20241109%2Fus-west-1%2Fs3%2Faws4_request&X-Amz-Date=20241109T234442Z&X-Amz-Expires=3600&X-Amz-SignedHeaders=host&X-Amz-Signature=a544d59e857d5faa42d8dc3ad7881588d899946727a6c5c24e5872509ec247d4">
+                                <i className="fa fa-file-pdf"></i>
+                            </a>
+                        </li>
                     </ul>
                     <ul className="ml-auto mr-2 md:hidden text-gray-800">
 

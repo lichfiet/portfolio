@@ -15,7 +15,7 @@ const HomePage = function () {
                         <ul className="p-4 text-left">
                             <li className="font-medium text-base lg:text-lg">Hey! <i className="font-light">My name is,</i></li>
                             <li className="text-xl lg:text-3xl italic hover:not-italic"><b>Trevor Lichfield</b></li>
-                            <li className="font-light text-base lg:text-lg italic underline">Fullstack & DevOps Engineer</li>
+                            <li className="font-light text-base lg:text-lg italic underline">Fullstack SWE & DevOps Engineer</li>
                         </ul>
                     </div>
                 </div>
@@ -25,14 +25,14 @@ const HomePage = function () {
                             Where am I?
                         </h1>
                         <p className="indent-3 mb-2 text-sm lg:text-base">
-                            Well, first, thanks stopping by! This website is supposed to serve as a home for all my projects and
+                            Well, first, thanks for stopping by! This website is supposed to serve as a home for all my projects and
                             things I've worked on over my years so you can take a look at em'. 
                         </p>
                         <p className='p-1 text-center text-black dark:text-white'>
-                            <a href="./projects" onClick={(e) => { }} className="italic font-semibold">Click here for Projects</a>
+                            <a href="./projects" onClick={(e) => { }} className="underline font-semibold">My Projects</a>
                         </p>
-                        <p className='p-1 text-center'>
-                            <a href="./about" onClick={(e) => { }} className="italic font-semibold">Click here to read About Me</a>
+                        <p className='p-1 text-center text-black dark:text-white'>
+                            <a href="./about" onClick={(e) => { }} className="underline font-semibold">Read About Me</a>
                         </p>
                     </div>
                 </div>
