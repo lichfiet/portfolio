@@ -6,17 +6,19 @@ const HomePage = function () {
 
     return (
         <div className="flex-grow overflow-auto container mx-auto my-auto justify-center content-center px-0 lg:px-28 md:px-4 md:pb-28">
-            <div className="block lg:grid grid-cols-2">
-                <div className="content-center p-6">
+            <div className="block lg:grid grid-cols-2 m-4 md:m-16">
+                <div className="content-center p-4 ">
                     <div className="flex content-center justify-center">
-                        <img src="https://via.placeholder.com/250" alt="profile picture" />
+                        <img src="./el.jpg" alt="profile picture" className='w-48 h-48 md:w-60 md:h-60'/>
                     </div>
-                    <div className="justify-center">
-                        <ul className="m-16 text-left p-4">
-                            <li className="font-medium text-base lg:text-lg items-end">
-                                <i className="font-light pr-1">Hi, i'm</i>
-                                <p className="text-xl lg:text-3xl italic inline"><b>Trevor Lichfield,</b>
-                                <p className='inline text-lg font-light'> a Cloud & Devops Engineer, utilizing my development experience, and love of operations, to reduce the workload of maintaining and deploying software products.</p></p></li>
+                    <div className="justify-center mt-4">
+                        <ul className="text-left p-4">
+                            <li className="font-base text-base lg:text-lg items-end">
+                                <p className="inline font-medium">
+                                    Hi, i'm <b className='text-xl lg:text-3xl italic'>Trevor Lichfield,</b>
+                                    a Cloud & Devops Engineer, utilizing my development experience, and love of operations, to reduce the workload of maintaining and deploying software products.
+                                </p>
+                            </li>
                         </ul>
                     </div>
                 </div>
