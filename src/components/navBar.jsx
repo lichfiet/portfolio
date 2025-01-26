@@ -60,7 +60,7 @@ export function NavBar() {
                         </li> */}
                         <li className="hidden md:block text-gray-800">
                             <a href="#" onClick={(e) => { e.preventDefault(); handleChange("projects") }} className="dark:text-gray-300 hover:text-gray-400 hidden md:block">
-                                portfolio
+                                projects
                             </a>
                         </li>
                         <li className="hidden md:block text-gray-800">
