@@ -5,7 +5,7 @@
     animation: scrollBackground 40s linear infinite;
 }
 
-@keyframes scrollBackground {
+/* @keyframes scrollBackground {
     0% {
         background-position: 0 0;
     }
@@ -13,7 +13,7 @@
     100% {
         background-position: 100% 0%;
     }
-}
+} */
 
 .backgroundDarkMode {
     background-color: #232226;
@@ -22,7 +22,7 @@
     animation: scrollBackground 40s linear infinite;
 }
 
-@keyframes scrollBackground {
+/* @keyframes scrollBackground {
     0% {
         background-position: 0 0;
     }
@@ -30,4 +30,4 @@
     100% {
         background-position: 100% 0%;
     }
-}
+} */
